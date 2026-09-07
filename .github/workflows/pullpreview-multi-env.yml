@@ -1,9 +1,10 @@
 name: pullpreview_multi_env
 on:
-  schedule:
-    - cron: "45 0 * * *"
-  pull_request:
-    types: [labeled, unlabeled, synchronize, closed, reopened]
+  # schedule:
+  #   - cron: "45 0 * * *"
+  # pull_request:
+  #   types: [labeled, unlabeled, synchronize, closed, reopened]
+  workflow_dispatch:
 
 jobs:
   deploy_env1:
